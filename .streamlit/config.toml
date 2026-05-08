@@ -1,0 +1,33 @@
+From 6729d0719f75c4b919db641857dddece854d603c Mon Sep 17 00:00:00 2001
+From: Autism AI Deploy <deploy@autism-ai.com>
+Date: Thu, 7 May 2026 20:58:03 +0000
+Subject: [PATCH] add: .streamlit/config.toml for Streamlit Cloud deployment
+
+---
+ .streamlit/config.toml | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 .streamlit/config.toml
+
+diff --git a/.streamlit/config.toml b/.streamlit/config.toml
+new file mode 100644
+index 0000000..1888e76
+--- /dev/null
++++ b/.streamlit/config.toml
+@@ -0,0 +1,15 @@
++[theme]
++base                     = "light"
++primaryColor             = "#667eea"
++backgroundColor          = "#f7f8fc"
++secondaryBackgroundColor = "#eef1ff"
++textColor                = "#1a1a2e"
++font                     = "sans serif"
++
++[server]
++maxUploadSize = 50
++headless      = true
++port          = 8501
++
++[browser]
++gatherUsageStats = false
+-- 
+2.43.0
